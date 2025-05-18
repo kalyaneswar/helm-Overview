@@ -107,3 +107,52 @@ helm repo list
 ```
 helm repo update
 ```
+
+## 🚀 Helm Releases
+
+A **Helm release** is a deployed instance of a Helm chart in your Kubernetes cluster.  
+Think of it as a running version of your application managed by Helm.
+
+Releases allow you to install, upgrade, roll back, and uninstall applications easily.  
+You can also manage multiple instances of the same chart with different configurations.
+
+### 🔧 Common Helm Release Commands
+
+- **Create a Release:**
+  ```bash
+  helm install myapp ./myapp
+    ```
+
+
+
+- **List All Releases:**
+
+```
+helm list
+```
+
+- **Upgrade a Release:**
+
+```
+helm upgrade myapp ./myapp
+```
+
+- **Roll Back to a Previous Version:**
+
+```
+helm rollback myapp 1
+```
+
+- **Delete a Release:**
+
+```
+helm uninstall myapp
+```
+
+### Helm releases are helpful for:
+
+* Tracking deployed versions
+
+* Performing rollbacks in case of issues
+
+* Managing multiple environments (e.g., myapp-dev, myapp-prod)
