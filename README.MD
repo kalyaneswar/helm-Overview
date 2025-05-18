@@ -14,9 +14,13 @@ A **Helm chart** is a collection of files that describe a related set of Kuberne
 
 mychart/
 ├── Chart.yaml # Metadata about the chart (name, version, etc.)
+
 ├── values.yaml # Default configuration values
+
 ├── templates/ # Kubernetes manifest templates (Deployment, Service, etc.)
+
 ├── charts/ # (Optional) Directory for chart dependencies
+
 └── README.md # Chart overview and usage
 
 
