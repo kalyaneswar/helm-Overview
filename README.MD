@@ -64,9 +64,10 @@ mychart/
 
 ```bash
 helm install <release-name> ./mychart
-
+```
 
 To override default values:
+
 ```sh
 helm install <release-name> ./mychart -f custom-values.yaml
 ```
