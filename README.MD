@@ -8,11 +8,26 @@ This repository contains a Helm chart used for deploying Kubernetes applications
 
 A **Helm chart** is a collection of files that describe a related set of Kubernetes resources.
 
+**Helm** is a package manager for Kubernetes — similar to how `dnf` or `yum` works in RHEL/Linux.
+
+Helm serves two primary purposes:
+
+1. **Package Management for Kubernetes**
+   - Helm allows you to install, upgrade, and uninstall Kubernetes applications packaged as **Helm charts**.
+   - Charts bundle all the Kubernetes resources needed for deploying an application or service.
+
+2. **Templatizing Kubernetes Manifests**
+   - Helm enables you to write manifest files using **Go templates**, which makes them reusable and configurable.
+   - You can use variables, loops, conditionals, and default values to dynamically generate YAML files based on input values.
+
+By using Helm, teams can manage complex Kubernetes deployments with version control, rollbacks, and configurable parameters.
+
 ---
 
 ## 📁 Chart Structure
 
 mychart/
+
 ├── Chart.yaml # Metadata about the chart (name, version, etc.)
 
 ├── values.yaml # Default configuration values
