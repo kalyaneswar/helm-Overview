@@ -96,9 +96,9 @@ They also support **versioning**, allowing you to install specific versions of a
 ### 🔧 Common Helm Repository Commands
 
 - **Add a Repository:**
-  ```bash
-  helm repo add bitnami https://charts.bitnami.com/bitnami
-    ```
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+```
 - **List Added Repositories:**
 ```
 helm repo list
@@ -119,9 +119,9 @@ You can also manage multiple instances of the same chart with different configur
 ### 🔧 Common Helm Release Commands
 
 - **Create a Release:**
-  ```bash
-  helm install myapp ./myapp
-    ```
+```bash
+helm install myapp ./myapp
+```
 
 
 
