@@ -84,3 +84,26 @@ helm template ./mychart                # Render templates locally
 helm show values ./mychart             # View default values
 helm uninstall <release-name>          # Delete a release
 ```
+
+## 📦 Helm Repositories
+
+A **Helm repository** is a place where **Helm charts** are stored and shared.  
+It functions similarly to package repositories in Linux, such as APT or YUM Repos.
+
+Repositories make it easy to organize, store, and distribute Helm charts.  
+They also support **versioning**, allowing you to install specific versions of a chart as needed.
+
+### 🔧 Common Helm Repository Commands
+
+- **Add a Repository:**
+  ```bash
+  helm repo add bitnami https://charts.bitnami.com/bitnami
+    ```
+- **List Added Repositories:**
+```
+helm repo list
+```
+- **Update Repositories:**
+```
+helm repo update
+```
